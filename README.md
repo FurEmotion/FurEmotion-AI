@@ -1,4 +1,4 @@
-# FurEmotion 먀
+# FurEmotion
 
 > "반려동물 감정 및 상황 해석을 위한 울음 감지 및 분석 어플리케이션" 프로젝트의 App Repository입니다.
 
