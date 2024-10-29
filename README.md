@@ -120,3 +120,10 @@
 이에 따라 AI 최종평가까지 다음 내용을 개발할 예정입니다.
 
 - 실사용을 통해서 모델과의 상호작용이 잘 되도록 하는 것이 목표.
+
+
+
+데이터 수집 출처 일부<br n>
+https://www.youtube.com/watch?v=iWUBmO1hVhk<br n>
+https://www.youtube.com/watch?v=p9yhjZBUIJM<br n>
+https://www.youtube.com/watch?v=AqqJvyRlFwQ<br n>
