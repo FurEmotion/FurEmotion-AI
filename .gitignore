@@ -165,3 +165,4 @@ data/*
 model/processing/*
 data_backup.zip
 *.h5
+model/ast_model_pytorch/*
