@@ -12,6 +12,7 @@ from keras.callbacks import History, ModelCheckpoint
 
 class WaveNetClassifier():
   def __init__(self, input_shape, output_shape, kernel_size = 2, dilation_depth = 9, n_filters = 40, task = 'classification', regression_range = None, load=False, load_dir='./'):
+    self.task = task
     """
     Parameters:
       input_shape: (tuple) tuple of input shape. (e.g. If input is 6s raw waveform with sampling rate = 16kHz, (96000,) is the input_shape)
@@ -24,8 +25,6 @@ class WaveNetClassifier():
       load: (bool) load previous WaveNetClassifier or not
       load_dir: (string) the directory where the previous model exists
     """      
-
-    self.task = task
     # save task info
     if task == 'regression':
       if regression_range[0] == 0:
