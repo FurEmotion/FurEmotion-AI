@@ -136,6 +136,7 @@ class WaveNetClassifier():
       out = AveragePooling1D((int) (self.input_shape[0] / 8000), name='final_pooling')(out)
       out = Reshape(self.output_shape)(out)
       out = Activation(self.activation)(out)
+      
     if self.scale_ratio != 1:
       out = Lambda(lambda x: x * self.scale_ratio, name='output_reshaped')(out)
     model = Model(x, out)  
