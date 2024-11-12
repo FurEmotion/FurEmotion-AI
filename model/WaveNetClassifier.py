@@ -85,6 +85,8 @@ class WaveNetClassifier():
       self.history = None
       self.prev_history = None
 
+    self.task = task
+
     
   def residual_block(self, x, i):
     tanh_out = Conv1D(self.n_filters, 
@@ -179,8 +181,8 @@ class WaveNetClassifier():
       self.history = self.model.fit(X, Y, shuffle = True, batch_size=batch_size, epochs = epochs, validation_data = validation_data, callbacks=callbacks, initial_epoch=self.start_idx)
     except:
       if save:
-      	df = pd.DataFrame.from_dict(history.history)
-      	df.to_csv(hist, encoding='utf-8', index=False)
+        df = pd.DataFrame.from_dict(history.history)
+        df.to_csv(hist, encoding='utf-8', index=False)
       raise
       sys.exit()
     return self.history
