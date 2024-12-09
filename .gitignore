@@ -168,3 +168,5 @@ data_backup.zip
 model/ast_model_pytorch/*
 model/best_model_dog.pth
 model/best_model.pth
+model/ast_model_pytorch_cat/model.safetensors
+model/ast_model_pytorch_dog/model.safetensors
